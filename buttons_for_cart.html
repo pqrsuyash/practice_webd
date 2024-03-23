@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button for cart</title>
+</head>
+<style>
+    button{
+        border:none;
+        color:blue;
+        background-color:skyblue;
+        padding:10px 20px;
+        font-size:20px
+    }
+</style>
+<body>
+    <button onclick="console.log(`the quantity is ${cartquantity}`)">show quantity</button>
+    <button onclick="
+    cartquantity+=1
+    console.log(`item added`)
+    console.log(`cart quantity is ${cartquantity}`)">add quantity</button>
+    <button onclick="cartquantity+=2
+    console.log(`cart quantity is ${cartquantity}`)">+2</button>
+    <button onclick="cartquantity+=3
+    console.log(`cart quantity is ${cartquantity}`)">+3</button>
+    <button onclick="cartquantity=0
+    console.log(`the cart is reset`)
+    console.log(`the quantity is ${cartquantity}`)">reset</button>
+</body>
+<script>
+    let cartquantity=0;
+    
+</script>
+
+</html>
