@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>ROCK-PAPER-SCISSOR</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head{
+        color:aquamarine;
+        align-content:center;
+        
+    }
+    .but{
+        background-color: bisque;
+        color: darkblue;
+        border-radius:50px;
+        padding:20px 40px;
+    }
+</style>
+<body>
+    <h1 class="head">THIS IS A ROCK PAPER SCISSOR GAME</h1>
+    <button title="press for rock" class="but" onclick="random=getRandomInt(3);
+   if(random==0){
+    alert('You chose rock. The computer chose rock. The match is draw');
+   }
+   else if(random==1){
+    alert('You chose rock. The computer chose paper. You lost');
+   } else{
+    alert('You chose rock. The computer chose scissor. You won');
+   }
+   "
+    ><h2>ROCK</h2></button>
+    <button title="press for paper" class="but"  onclick="random=getRandomInt(3);
+    if(random==0){
+     alert('You chose paper. The computer chose rock. You won');
+    }
+    else if(random==1){
+     alert('You chose paper. The computer chose paper. The match is draw');
+    } else{
+     alert('You chose paper. The computer chose scissor. You lost');
+    }
+    "><h2>PAPER</h2></button>
+    <button title="press for scissor" class="but" onclick="random=getRandomInt(3);
+    if(random==0){
+     alert('You chose scissors. The computer chose rock. You lost');
+    }
+    else if(random==1){
+     alert('You chose scissors. The computer chose paper. You won');
+    } else{
+     alert('You chose scissors. The computer chose scissor. The match is draw');
+    }
+    "><h2>SCISSOR</h2></button>
+</body>
+<script>
+    let random;
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+</script>
+</html>
